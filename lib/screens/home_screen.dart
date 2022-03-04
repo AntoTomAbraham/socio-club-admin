@@ -1,3 +1,4 @@
+import 'package:chat_app_admin/screens/contests_screen.dart';
 import 'package:chat_app_admin/screens/home.dart';
 import 'package:chat_app_admin/screens/story_screen.dart';
 import 'package:flutter/material.dart';
@@ -16,6 +17,7 @@ class _homescreenState extends State<homescreen> {
   List<Widget> tabPages = [
     home(),
     storyscreen(),
+    contests(),
   ];
 
   @override
@@ -66,6 +68,12 @@ class _homescreenState extends State<homescreen> {
                   label: "Add story",
                   icon: Icon(
                     Icons.home_max,
+                    color: Colors.blue,
+                  )),
+              NavigationDestination(
+                  label: "View Contests",
+                  icon: Icon(
+                    Icons.analytics_outlined,
                     color: Colors.blue,
                   )),
             ],
